@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decked Out!</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/navigation.js"></script>
+</head>
+
+<body>
+    <div id="Landing Page"
+        class="page h-screen w-full bg-gradient-to-t from-black to-purple-700 flex flex-col items-center justify-center">
+        <div class="w-full bg-black absolute top-0 z-0" style="height: 45%; "> </div>
+        <div class="flex flex-row justify-around text-white items-center z-40">
+            <div class="font-bold animate-fadeIn flex-col text-center ">
+                <div class="text-11xl">DECKED OUT</div>
+                <div class="text-lg -mt-10">THE POWER IS IN YOUR CARDS</div>
+            </div>
+            <div class="animate-hover z-40 w-1/5" style="perspective: 1000px;"> <img src="assets\Poison.png" alt=""
+                    class="" style="transform: rotateZ(10deg) rotateX(17deg) rotateY(-25deg);">
+            </div>
+
+        </div>
+        <div class="h-12 w-12 text-white animate-bounce pt-32" onclick="scollTo('About Page')">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+    </div>
+    <div id="About Page"
+        class="page h-screen bg-gradient-to-b from-black to-purple-700 relative flex flex-col justify-center items-center">
+        <div class="flex flex-row justify-center items-center h-50">
+            <div class="w-48 h-auto transform -rotate-35 mt-16 -mr-32 z-20"><img src="assets\Poison.png" alt=""></div>
+            <div class="w-64 h-auto transform -rotate-25 -mr-32 z-30"><img src="assets\Death.png" alt=""></div>
+            <div class="z-40">
+                <iframe width="720" height="405" src="https://www.youtube.com/embed/Dvt7Ajnx4Uk"></iframe>
+            </div>
+            <div class="w-64 h-auto transform rotate-25 -ml-32 z-30"> <img src="assets\Frost.png" alt=""></div>
+            <div class="w-48 h-auto transform rotate-35 mt-16 -ml-32 z-20"><img src="assets\Iron.png" alt=""></div>
+        </div>
+        <div class="w-full bg-black absolute bottom-0 z-0" style="height: 50%; "> </div>
+        <div class="w-1/2 text-white z-40 h-32 mt-16">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+            temporibus odio obcaecati dolore tempore qui labore minima laudantium non, nihil et quos, molestiae quis
+            assumenda, quibusdam ipsam eos itaque ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, rem
+            ad! Consequatur tenetur mollitia esse ullam architecto, consequuntur odio maiores placeat doloribus ut
+            officiis ex sed nostrum voluptates libero est?</div>
+    </div>
+    <div id="Card Page" class="page h-screen bg-gradient-to-b from-black to-purple-700 flex flex-col justify-around items-center">
+        <div class="w-2/3">
+            <div class="flex flex-row justify-around items-center perspective">
+                <div class="w-40 perspective">
+                    <img src="assets\Death.png" alt="" class="card">
+                </div>
+                <div class="w-40 card">
+                    <img src="assets\Poison.png" alt="">
+                </div>
+                <div class="w-40 card">
+                    <img src="assets\Iron.png" alt="">
+                </div>
+                <div class="w-40 card">
+                    <img src="assets\Frost.png" alt="">
+                </div>
+                <div class="w-40 card">
+                    <img src="assets\Sun.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="w-2/3">
+            <div class="flex flex-row justify-around items-center ">
+                <div class="w-40">
+                    <img src="assets\Leaf.png" alt="">
+                </div>
+                <div class="w-40">
+                    <img src="assets\Wind.png" alt="">
+                </div>
+                <div class="w-40">
+                    <img src="assets\Sacrifice.png" alt="">
+                </div>
+                <div class="w-40">
+                    <img src="assets\Rainbow.png" alt="">
+                </div>
+                <div class="w-40">
+                    <img src="assets\Laser.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="w-2/3">
+            <div class="flex flex-row justify-around items-center w-3/5 mx-auto">
+                <div class="w-40 card">
+                    <img src="assets\Time2.png" alt="">
+                </div>
+                <div class="w-40 card">
+                    <img src="assets\Boost.png" alt="">
+                </div>
+                <div class="w-40 card">
+                    <img src="assets\Heaven.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Boss Page" class="page h-screen bg-gradient-to-b from-purple-700 to-black relative">
+        <div class="w-full bg-purple-700 absolute bottom-0 z-0" style="height: 50%; ">
+            
+        </div>
+    </div>
+</body>
+</html>

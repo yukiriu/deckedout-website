@@ -1,0 +1,41 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #3b3b3b;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(107, 107, 107);
+    border-radius: 20px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.perspective {
+    perspective: 800px;
+}
+
+.page {
+    scroll-snap-align: start none;
+}
+
+body {
+    -webkit-scroll-snap-type: mandatory;
+    -webkit-scroll-snap-points-y: repeat(100%);
+    scroll-snap-type: y mandatory;
+}
