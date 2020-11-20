@@ -10,101 +10,251 @@
     <script src="js/navigation.js"></script>
 </head>
 
-<body>
-    <div id="Landing Page"
-        class="page h-screen w-full bg-gradient-to-t from-black to-purple-700 flex flex-col items-center justify-center">
-        <div class="w-full bg-black absolute top-0 z-0" style="height: 45%; "> </div>
-        <div class="flex flex-row justify-around text-white items-center z-40">
-            <div class="font-bold animate-fadeIn flex-col text-center ">
-                <div class="text-11xl">DECKED OUT</div>
-                <div class="text-lg -mt-10">THE POWER IS IN YOUR CARDS</div>
+<body class=" relative">
+    <!-- Nav -->
+    <div
+        class="flex flex-row text-white nav h-24 fixed bg-transparent justify-around items-center font-bold text-lg bg-gradient-to-b from-black to-transparent z-50">
+        <div onclick="scrollToPage('Landing Page')" class="buttonText">
+            Decked Out
+        </div>
+        <div class="flex flex-row justify-around w-1/3 items-center  ">
+            <div onclick="scrollToPage('About Page')" class="buttonText">
+                About
             </div>
-            <div class="animate-hover z-40 w-1/5" style="perspective: 1000px;"> <img src="assets\Poison.png" alt=""
-                    class="" style="transform: rotateZ(10deg) rotateX(17deg) rotateY(-25deg);">
+            <div onclick="scrollToPage('Card Page')" class="buttonText">
+                Cards
             </div>
+            <div onclick="scrollToPage('Enemy Page')" class="buttonText">
+                Enemies
+            </div>
+            <div onclick="scrollToPage('Team Page')" class="buttonText">
+                Team
+            </div>
+        </div>
+    </div>
+    <div class="scroll-container">
+        <div id="Landing Page"
+            class="page h-screen w-full bg-gradient-to-t from-black to-purple-700 flex flex-col items-center justify-center">
+            <div class="w-full bg-black absolute top-0 z-0" style="height: 45%; "> </div>
+            <div class="flex flex-row justify-around text-white items-center z-40">
+                <div class="font-bold animate-fadeIn flex-col text-center ">
+                    <div class="text-11xl">DECKED OUT</div>
+                    <div class="text-lg -mt-10">THE POWER IS IN YOUR CARDS</div>
+                </div>
+                <div class="animate-hover w-1/5" style="perspective: 1000px;"> <img src="assets\Poison.png" alt=""
+                        class="" style="transform: rotateZ(10deg) rotateX(17deg) rotateY(-25deg);">
+                </div>
 
-        </div>
-        <div class="h-12 w-12 text-white animate-bounce pt-32" onclick="scollTo('About Page')">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-        </div>
-    </div>
-    <div id="About Page"
-        class="page h-screen bg-gradient-to-b from-black to-purple-700 relative flex flex-col justify-center items-center">
-        <div class="flex flex-row justify-center items-center h-50">
-            <div class="w-48 h-auto transform -rotate-35 mt-16 -mr-32 z-20"><img src="assets\Poison.png" alt=""></div>
-            <div class="w-64 h-auto transform -rotate-25 -mr-32 z-30"><img src="assets\Death.png" alt=""></div>
-            <div class="z-40">
-                <iframe width="720" height="405" src="https://www.youtube.com/embed/Dvt7Ajnx4Uk"></iframe>
             </div>
-            <div class="w-64 h-auto transform rotate-25 -ml-32 z-30"> <img src="assets\Frost.png" alt=""></div>
-            <div class="w-48 h-auto transform rotate-35 mt-16 -ml-32 z-20"><img src="assets\Iron.png" alt=""></div>
-        </div>
-        <div class="w-full bg-black absolute bottom-0 z-0" style="height: 50%; "> </div>
-        <div class="w-1/2 text-white z-40 h-32 mt-16">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
-            temporibus odio obcaecati dolore tempore qui labore minima laudantium non, nihil et quos, molestiae quis
-            assumenda, quibusdam ipsam eos itaque ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, rem
-            ad! Consequatur tenetur mollitia esse ullam architecto, consequuntur odio maiores placeat doloribus ut
-            officiis ex sed nostrum voluptates libero est?</div>
-    </div>
-    <div id="Card Page" class="page h-screen bg-gradient-to-b from-black to-purple-700 flex flex-col justify-around items-center">
-        <div class="w-2/3">
-            <div class="flex flex-row justify-around items-center perspective">
-                <div class="w-40 perspective">
-                    <img src="assets\Death.png" alt="" class="card">
-                </div>
-                <div class="w-40 card">
-                    <img src="assets\Poison.png" alt="">
-                </div>
-                <div class="w-40 card">
-                    <img src="assets\Iron.png" alt="">
-                </div>
-                <div class="w-40 card">
-                    <img src="assets\Frost.png" alt="">
-                </div>
-                <div class="w-40 card">
-                    <img src="assets\Sun.png" alt="">
-                </div>
+            <div class="h-12 w-12 text-white animate-bounce pt-32" onclick="scrollToPage('About Page')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
             </div>
         </div>
-        <div class="w-2/3">
-            <div class="flex flex-row justify-around items-center ">
-                <div class="w-40">
-                    <img src="assets\Leaf.png" alt="">
+        <div id="About Page"
+            class="page h-screen bg-gradient-to-b from-black to-purple-700 relative flex flex-col justify-center items-center">
+            <div class="flex flex-row justify-center items-center h-50">
+                <div class="w-48 h-auto transform -rotate-35 mt-16 -mr-32 z-20"><img src="assets\Poison.png" alt="">
                 </div>
-                <div class="w-40">
-                    <img src="assets\Wind.png" alt="">
+                <div class="w-64 h-auto transform -rotate-25 -mr-32 z-30"><img src="assets\Death.png" alt=""></div>
+                <div class="z-40">
+                    <iframe width="720" height="405" src="https://www.youtube.com/embed/Dvt7Ajnx4Uk"></iframe>
                 </div>
-                <div class="w-40">
-                    <img src="assets\Sacrifice.png" alt="">
+                <div class="w-64 h-auto transform rotate-25 -ml-32 z-30"> <img src="assets\Frost.png" alt=""></div>
+                <div class="w-48 h-auto transform rotate-35 mt-16 -ml-32 z-20"><img src="assets\Iron.png" alt=""></div>
+            </div>
+            <div class="w-full bg-black absolute bottom-0 z-0" style="height: 50%; "> </div>
+            <div class="w-1/2 text-white z-40 h-32 mt-16">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Earum
+                temporibus odio obcaecati dolore tempore qui labore minima laudantium non, nihil et quos, molestiae quis
+                assumenda, quibusdam ipsam eos itaque ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                rem
+                ad! Consequatur tenetur mollitia esse ullam architecto, consequuntur odio maiores placeat doloribus ut
+                officiis ex sed nostrum voluptates libero est?</div>
+        </div>
+        <div id="Card Page"
+            class="page h-screen bg-gradient-to-b from-black to-purple-700 flex flex-col justify-around items-center py-16">
+            <div class="w-2/3 ">
+                <div class="flex flex-row justify-around items-center">
+                    <div class="w-32 card">
+                        <img src="assets\Death.png" alt="" class="card">
+                    </div>
+                    <div class="w-32 card">
+                        <img src="assets\Poison.png" alt="">
+                    </div>
+                    <div class="w-32 card">
+                        <img src="assets\Iron.png" alt="">
+                    </div>
+                    <div class="w-32 card">
+                        <img src="assets\Frost.png" alt="">
+                    </div>
+                    <div class="w-32 card">
+                        <img src="assets\Sun.png" alt="">
+                    </div>
                 </div>
-                <div class="w-40">
-                    <img src="assets\Rainbow.png" alt="">
+            </div>
+            <div class="w-2/3">
+                <div class="flex flex-row justify-around items-center ">
+                    <div class="w-32 card">
+                        <img src="assets\Leaf.png" alt="">
+                    </div>
+                    <div class="w-32 card">
+                        <img src="assets\Wind.png" alt="">
+                    </div>
+                    <div class="w-32 card">
+                        <img src="assets\Sacrifice.png" alt="">
+                    </div>
+                    <div class="w-32 card">
+                        <img src="assets\Rainbow.png" alt="">
+                    </div>
+                    <div class="w-32 card">
+                        <img src="assets\Laser.png" alt="">
+                    </div>
                 </div>
-                <div class="w-40">
-                    <img src="assets\Laser.png" alt="">
+            </div>
+            <div class="w-2/3">
+                <div class="flex flex-row justify-around items-center w-3/5 mx-auto">
+                    <div class="w-32 card">
+                        <img src="assets\Time2.png" alt="">
+                    </div>
+                    <div class="w-32 card">
+                        <img src="assets\Boost.png" alt="">
+                    </div>
+                    <div class="w-32 card">
+                        <img src="assets\Heaven.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="w-2/3">
-            <div class="flex flex-row justify-around items-center w-3/5 mx-auto">
-                <div class="w-40 card">
-                    <img src="assets\Time2.png" alt="">
+        <div id="Enemy Page"
+            class="page h-screen bg-gradient-to-b from-purple-700 to-black relative flex flex-col justify-center items-center">
+            <div class="flex flex-row justify-around items-end z-40 w-full h-3/5">
+                <div class="flex flex-col justify-center items-center">
+                    <div class="text-white text-4xl font-bold">Joker</div>
+                    <div
+                        class="h-72 w-64 bg-gray-900 rounded-t-full flex flex-col justify-center items-center relative">
+                        <div
+                            class="h-64 w-64 rounded-t-full top-0 absolute bg-gradient-to-b from-black to-transparent z-40 door">
+                        </div>
+                        <div class="w-full h-full enemy duration-300 flex-row flex justify-center items-center">
+                            <img src="assets\Boss_Joker.png" alt=""
+                                class="h-64 w-auto z-0 duration-300 transition-transform">
+                        </div>
+                    </div>
                 </div>
-                <div class="w-40 card">
-                    <img src="assets\Boost.png" alt="">
+                <div class="flex flex-col justify-center items-center">
+                    <div class="text-white text-4xl font-bold">Snake</div>
+                    <div
+                        class="h-72 w-64 bg-gray-900 rounded-t-full flex flex-col justify-center items-center relative">
+                        <div
+                            class="h-64 w-64 rounded-t-full top-0 absolute bg-gradient-to-b from-black to-transparent z-40 door">
+                        </div>
+                        <div class="w-full h-full enemy duration-300 flex-row flex justify-center items-center">
+                            <img src="assets\Boss_Snake.png" alt=""
+                                class="h-64 w-auto z-0 duration-300 transition-transform">
+                        </div>
+                    </div>
                 </div>
-                <div class="w-40 card">
-                    <img src="assets\Heaven.png" alt="">
+                <div class="flex flex-col justify-center items-center">
+                    <div class="text-white text-4xl font-bold">Magician</div>
+                    <div
+                        class="h-72 w-64 bg-gray-900 rounded-t-full flex flex-col justify-center items-center relative">
+                        <div
+                            class="h-64 w-64 rounded-t-full top-0 absolute bg-gradient-to-b from-black to-transparent z-40 door">
+                        </div>
+                        <div class="w-full h-full enemy duration-300 flex-row flex justify-center items-center">
+                            <img src="assets\Boss_Magician.png" alt=""
+                                class="h-64 w-auto z-0 duration-300 transition-transform">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="text-white text-4xl font-bold">Silence</div>
+                    <div
+                        class="h-72 w-64 bg-gray-900 rounded-t-full flex flex-col justify-center items-center relative">
+                        <div
+                            class="h-64 w-64 rounded-t-full top-0 absolute bg-gradient-to-b from-black to-transparent z-40 door">
+                        </div>
+                        <div class="w-full h-full enemy duration-300 flex-row flex justify-center items-center">
+                            <img src="assets\Boss_Silence.png" alt=""
+                                class="h-64 w-auto z-0 duration-300 transition-transform">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="h-2/5 w-full bg-purple-700 flex flex-row justify-around items-center text-white md:items-end pb-6">
+                <div class="w-1/5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus quos, quaerat doloremque odio
+                    et libero. Possimus aut deserunt ipsam nihil! Aliquid, voluptatibus reiciendis animi eius quae
+                    consectetur in! Odio?
+                </div>
+                <div class="w-1/5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus quos, quaerat doloremque odio
+                    et libero. Possimus aut deserunt ipsam nihil! Aliquid, voluptatibus reiciendis animi eius quae
+                    consectetur in! Odio?
+                </div>
+                <div class="w-1/5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus quos, quaerat doloremque odio
+                    et libero. Possimus aut deserunt ipsam nihil! Aliquid, voluptatibus reiciendis animi eius quae
+                    consectetur in! Odio?
+                </div>
+                <div class="w-1/5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus quos, quaerat doloremque odio
+                    et libero. Possimus aut deserunt ipsam nihil! Aliquid, voluptatibus reiciendis animi eius quae
+                    consectetur in! Odio?
                 </div>
             </div>
         </div>
-    </div>
-    <div id="Boss Page" class="page h-screen bg-gradient-to-b from-purple-700 to-black relative">
-        <div class="w-full bg-purple-700 absolute bottom-0 z-0" style="height: 50%; ">
-            
+        <div id="Team Page"
+            class="page h-screen bg-gradient-to-b from-purple-700 to-black relative flex flex-col items-center justify-center">
+            <div class="flex flex-row justify-around items-center w-2/3">
+                <div class="h-128 w-72 bg-white shadow-2xl flex flex-col rounded-xl text-black">
+                    <div
+                        class="pt-4 w-full mx-auto bg-gradient-to-b from-pink-900 to-pink-500 rounded-t-xl overflow-hidden ">
+                        <img src="assets\Gab.png" alt="" class="w-auto mx-auto">
+                    </div>
+                    <div class="text-center text-2xl">
+                        Gabriel Jalbert
+                    </div>
+                    <div class="mx-auto w-4/5">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere accusantium dignissimos magnam
+                        molestias minima id eius, recusandae vel quo vero, nihil, suscipit cum totam debitis libero illo
+                        odio earum delectus!
+                    </div>
+                </div>
+                <div class="h-128 w-72 bg-white shadow-2xl flex flex-col rounded-xl text-black">
+                    <div
+                        class="pt-4 w-full mx-auto bg-gradient-to-b from-pink-900 to-pink-500 rounded-t-xl overflow-hidden ">
+                        <img src="assets\Gab.png" alt="" class="w-auto mx-auto">
+                    </div>
+                    <div class="text-center text-2xl">
+                        Gabriel Jalbert
+                    </div>
+                    <div class="mx-auto w-4/5">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere accusantium dignissimos magnam
+                        molestias minima id eius, recusandae vel quo vero, nihil, suscipit cum totam debitis libero illo
+                        odio earum delectus!
+                    </div>
+                </div>
+                <div class="h-128 w-72 bg-white shadow-2xl flex flex-col rounded-xl text-black">
+                    <div
+                        class="pt-4 w-full mx-auto bg-gradient-to-b from-pink-900 to-pink-500 rounded-t-xl overflow-hidden ">
+                        <img src="assets\Gab.png" alt="" class="w-auto mx-auto">
+                    </div>
+                    <div class="text-center text-2xl">
+                        Gabriel Jalbert
+                    </div>
+                    <div class="mx-auto w-4/5">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere accusantium dignissimos magnam
+                        molestias minima id eius, recusandae vel quo vero, nihil, suscipit cum totam debitis libero illo
+                        odio earum delectus!
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>

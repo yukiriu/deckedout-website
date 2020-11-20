@@ -8,34 +8,62 @@
     width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: #3b3b3b;
 
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: rgb(107, 107, 107);
     border-radius: 20px;
 
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
-.perspective {
-    perspective: 800px;
-}
 
 .page {
-    scroll-snap-align: start none;
+    scroll-snap-align: center;
 }
 
-body {
-    -webkit-scroll-snap-type: mandatory;
-    -webkit-scroll-snap-points-y: repeat(100%);
+.scroll-container {
     scroll-snap-type: y mandatory;
+    height: 100vh;
+    scroll-behavior: smooth;
+    position: relative;
+}
+.nav {
+    width: calc(100vw - 10px);
+}
+
+.buttonText {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background: linear-gradient(to right, #9f7aea, #9f7aea 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position:100% 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+}
+.buttonText:hover{
+    background-position: 0 0;
+}
+
+.enemy {
+    transform: scale(0.75)
+}
+
+.enemy:hover {
+    transform: scale(1.15) translate(0, 100px);
+}
+
+.door{
+    pointer-events: none;
 }

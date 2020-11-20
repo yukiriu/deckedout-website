@@ -1,3 +1,4 @@
-function scrollTo (id) {
-    document.getElementById(id).scrollIntoView(false)
+function scrollToPage (id) {
+    document.getElementById(id).scrollIntoView({behavior: "smooth"})
+    console.log(id)
 }
