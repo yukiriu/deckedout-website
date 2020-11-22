@@ -44,6 +44,15 @@ module.exports = {
         '96': '24rem',
         '128': '32rem'
       },
+      width: {
+        '36' : '9rem',
+        '40' : '10rem',
+        '44' : '11rem',
+        '72': '18rem',
+        '84': '21rem',
+        '96': '24rem',
+        '128': '32rem'
+      },
       animation: {
         fadeIn: "fadeIn 2s ease-in forwards",
         breathe: "breathe 5s ease-out infinite normal",

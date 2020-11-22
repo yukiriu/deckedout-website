@@ -23132,16 +23132,28 @@ video {
   background-position: 0 0;
 }
 
+.boss {
+  transform: scale(0.75)
+}
+
+.boss:hover {
+  transform: scale(1.15) translate(0, 100px);
+}
+
 .enemy {
-  transform: scale(0.75) translate(0, -50px);
+  transform: scale(0.75)
 }
 
 .enemy:hover {
-  transform: scale(1.15) translate(0, 150px);
+  transform: scale(1.15) translate(0, -100px);
 }
 
 .door{
   pointer-events: none;
+}
+
+.oval{
+  border-radius: 50%;
 }
 
 @media (min-width: 640px) {

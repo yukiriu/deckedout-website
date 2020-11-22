@@ -13,11 +13,11 @@
 <body class=" relative">
     <!-- Nav -->
     <div
-        class="flex flex-row text-white nav h-24 fixed bg-transparent justify-around items-center font-bold text-lg bg-gradient-to-b from-black to-transparent z-50">
+        class="flex flex-row text-white nav h-12 fixed bg-opacity-50 bg-black justify-around items-center font-bold text-lg z-50">
         <div onclick="scrollToPage('Landing Page')" class="buttonText">
             Decked Out
         </div>
-        <div class="flex flex-row justify-around w-1/3 items-center  ">
+        <div class="flex flex-row justify-around w-1/3 items-center">
             <div onclick="scrollToPage('About Page')" class="buttonText">
                 About
             </div>
@@ -26,6 +26,12 @@
             </div>
             <div onclick="scrollToPage('Enemy Page')" class="buttonText">
                 Enemies
+            </div>
+            <div onclick="scrollToPage('Boss Page')" class="buttonText">
+                Bosses
+            </div>
+            <div onclick="scrollToPage('Tutorial Page')" class="buttonText">
+                Tutorial
             </div>
             <div onclick="scrollToPage('Team Page')" class="buttonText">
                 Team
@@ -127,7 +133,85 @@
                 </div>
             </div>
         </div>
-        <div id="Enemy Page"
+        <div id="Enemy Page" class="h-screen bg-purple-700 flex flex-col justify-center items-center">
+            <div class="flex flex-row justify-around items-center w-full px-16 py-12 bg-purple-900">
+                <div class="w-1/2 text-white">
+                    <div class="text-8xl">
+                        Enemies
+                    </div>
+                    <div class="text-2xl">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ad ullam eveniet sit, praesentium
+                        temporibus ex placeat quaerat earum neque veritatis illo officiis repudiandae dicta soluta
+                        quisquam dignissimos? Suscipit, tempore.
+                    </div>
+                    <ul class="text-2xl mt-2 list-disc list-inside">
+                        <li>
+                            Normal Enemy
+                        </li>
+                        <li>
+                            Speed Enemy
+                        </li>
+                        <li>
+                            Mini-Boss
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-1/2 flex flex-col justify-around text-white text-3xl">
+                    <div class="flex flex-row justify-around ">
+                        <div>
+                            <div class="oval bg-black h-32 w-64 relative">
+                                <div
+                                    class="oval bg-gradient-to-t from-black to-transparent absolute h-32 w-64 door z-40">
+                                </div>
+                                <div
+                                    class="w-full enemy duration-300 flex-row flex justify-center items-center absolute">
+                                    <img src="assets\_NormalEnemy.png" alt=""
+                                        class="h-32 w-auto z-0 duration-300 transition-transform">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                Normal Enemy
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="oval bg-black h-32 w-64 relative">
+                                <div
+                                    class="oval bg-gradient-to-t from-black to-transparent absolute h-32 w-64 door z-40">
+                                </div>
+                                <div
+                                    class="w-full enemy duration-300 flex-row flex justify-center items-center absolute">
+                                    <img src="assets\_SpeedEnemy.png" alt=""
+                                        class="h-32 w-auto z-0 duration-300 transition-transform">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                Speed Enemy
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-around z-50">
+                        <div>
+                            <div class="oval bg-black h-32 w-64 relative">
+                                <div
+                                    class="oval bg-gradient-to-t from-black to-transparent absolute h-32 w-64 door z-40">
+                                </div>
+                                <div
+                                    class="w-full enemy duration-300 flex-row flex justify-center items-center absolute">
+                                    <img src="assets\_MiniBossEnemy.png" alt=""
+                                        class="h-32 w-auto z-0 duration-300 transition-transform">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                Mini-Boss
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="Boss Page"
             class="page h-screen bg-gradient-to-b from-purple-700 to-black relative flex flex-col justify-center items-center">
             <div class="flex flex-row justify-around items-end z-40 w-full h-3/5">
                 <div class="flex flex-col justify-center items-center">
@@ -137,7 +221,7 @@
                         <div
                             class="h-64 w-64 rounded-t-full top-0 absolute bg-gradient-to-b from-black to-transparent z-40 door">
                         </div>
-                        <div class="w-full h-full enemy duration-300 flex-row flex justify-center items-center">
+                        <div class="w-full h-full boss duration-300 flex-row flex justify-center items-center">
                             <img src="assets\Boss_Joker.png" alt=""
                                 class="h-64 w-auto z-0 duration-300 transition-transform">
                         </div>
@@ -150,7 +234,7 @@
                         <div
                             class="h-64 w-64 rounded-t-full top-0 absolute bg-gradient-to-b from-black to-transparent z-40 door">
                         </div>
-                        <div class="w-full h-full enemy duration-300 flex-row flex justify-center items-center">
+                        <div class="w-full h-full boss duration-300 flex-row flex justify-center items-center">
                             <img src="assets\Boss_Snake.png" alt=""
                                 class="h-64 w-auto z-0 duration-300 transition-transform">
                         </div>
@@ -163,7 +247,7 @@
                         <div
                             class="h-64 w-64 rounded-t-full top-0 absolute bg-gradient-to-b from-black to-transparent z-40 door">
                         </div>
-                        <div class="w-full h-full enemy duration-300 flex-row flex justify-center items-center">
+                        <div class="w-full h-full boss duration-300 flex-row flex justify-center items-center">
                             <img src="assets\Boss_Magician.png" alt=""
                                 class="h-64 w-auto z-0 duration-300 transition-transform">
                         </div>
@@ -176,7 +260,7 @@
                         <div
                             class="h-64 w-64 rounded-t-full top-0 absolute bg-gradient-to-b from-black to-transparent z-40 door">
                         </div>
-                        <div class="w-full h-full enemy duration-300 flex-row flex justify-center items-center">
+                        <div class="w-full h-full boss duration-300 flex-row flex justify-center items-center">
                             <img src="assets\Boss_Silence.png" alt=""
                                 class="h-64 w-auto z-0 duration-300 transition-transform">
                         </div>
@@ -184,7 +268,7 @@
                 </div>
             </div>
             <div
-                class="h-2/5 w-full bg-purple-700 flex flex-row justify-around items-center text-white md:items-end pb-6">
+                class="h-2/5 w-full bg-purple-700 flex flex-row justify-around items-center text-white md:items-end py-6">
                 <div class="w-1/5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus quos, quaerat doloremque odio
                     et libero. Possimus aut deserunt ipsam nihil! Aliquid, voluptatibus reiciendis animi eius quae
@@ -207,8 +291,121 @@
                 </div>
             </div>
         </div>
+        <div id="Tutorial Page" class="bg-gradient-to-b from-black to-purple-700 text-white py-32">
+            <div class="text-8xl w-full text-center">
+                Tutorial
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="flex flex-row justify-around text-2xl w-4/5 my-10">
+                    <div class="text-3xl text-left w-1/2">
+                        <div class="text-5xl">
+                            Deck
+                        </div>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, ratione laboriosam
+                            officiis doloremque sequi inventore sit unde voluptates dicta corrupti voluptatibus
+                            assumenda, repellendus nihil quas! Qui odio mollitia ducimus voluptatem!
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/Sun.png" class="w-128 h-96">
+                    </div>
+                </div>
+                <div class="flex flex-row justify-around text-2xl w-4/5 my-10">
+                    <div class="text-3xl text-left w-1/2">
+                        <div class="text-5xl">
+                            Waves
+                        </div>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, ratione laboriosam
+                            officiis doloremque sequi inventore sit unde voluptates dicta corrupti voluptatibus
+                            assumenda, repellendus nihil quas! Qui odio mollitia ducimus voluptatem!
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/Sun.png" class="w-128 h-96">
+                    </div>
+                </div>
+                <div class="flex flex-row justify-around text-2xl w-4/5 my-10">
+                    <div class="text-3xl text-left w-1/2">
+                        <div class="text-5xl">
+                            Board
+                        </div>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, ratione laboriosam
+                            officiis doloremque sequi inventore sit unde voluptates dicta corrupti voluptatibus
+                            assumenda, repellendus nihil quas! Qui odio mollitia ducimus voluptatem!
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/Sun.png" class="w-128 h-96">
+                    </div>
+                </div>
+                <div class="flex flex-row justify-around text-2xl w-4/5 my-10">
+                    <div class="text-3xl text-left w-1/2">
+                        <div class="text-5xl">
+                            Power Up
+                        </div>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, ratione laboriosam
+                            officiis doloremque sequi inventore sit unde voluptates dicta corrupti voluptatibus
+                            assumenda, repellendus nihil quas! Qui odio mollitia ducimus voluptatem!
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/Sun.png" class="w-128 h-96">
+                    </div>
+                </div>
+                <div class="flex flex-row justify-around text-2xl w-4/5 my-10">
+                    <div class="text-3xl text-left w-1/2">
+                        <div class="text-5xl">
+                            Merge
+                        </div>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, ratione laboriosam
+                            officiis doloremque sequi inventore sit unde voluptates dicta corrupti voluptatibus
+                            assumenda, repellendus nihil quas! Qui odio mollitia ducimus voluptatem!
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/Sun.png" class="w-128 h-96">
+                    </div>
+                </div>
+                <div class="flex flex-row justify-around text-2xl w-4/5 my-10">
+                    <div class="text-3xl text-left w-1/2">
+                        <div class="text-5xl">
+                            Enemies
+                        </div>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, ratione laboriosam
+                            officiis doloremque sequi inventore sit unde voluptates dicta corrupti voluptatibus
+                            assumenda, repellendus nihil quas! Qui odio mollitia ducimus voluptatem!
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/Sun.png" class="w-128 h-96">
+                    </div>
+                </div>
+                <div class="flex flex-row justify-around text-2xl w-4/5 my-10">
+                    <div class="text-3xl text-left w-1/2">
+                        <div class="text-5xl">
+                            Bosses
+                        </div>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, ratione laboriosam
+                            officiis doloremque sequi inventore sit unde voluptates dicta corrupti voluptatibus
+                            assumenda, repellendus nihil quas! Qui odio mollitia ducimus voluptatem!
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/Sun.png" class="w-128 h-96">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="Team Page"
             class="page h-screen bg-gradient-to-b from-purple-700 to-black relative flex flex-col items-center justify-center">
+            <div class="w-full text-center text-white text-8xl">Team</div>
             <div class="flex flex-row justify-around items-center w-2/3">
                 <div class="h-128 w-72 bg-white shadow-2xl flex flex-col rounded-xl text-black">
                     <div
@@ -220,38 +417,69 @@
                     </div>
                     <div class="mx-auto w-4/5">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere accusantium dignissimos magnam
-                        molestias minima id eius, recusandae vel quo vero, nihil, suscipit cum totam debitis libero illo
-                        odio earum delectus!
+                    </div>
+                    <div>
+                        <a href="mailto:gabrieljalbert@gjalbert.com">
+                            <div class="h-16 w-16 mx-auto hover:opacity-25">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="h-128 w-72 bg-white shadow-2xl flex flex-col rounded-xl text-black">
                     <div
                         class="pt-4 w-full mx-auto bg-gradient-to-b from-pink-900 to-pink-500 rounded-t-xl overflow-hidden ">
-                        <img src="assets\Gab.png" alt="" class="w-auto mx-auto">
+                        <img src="assets\Raph.png" alt="" class="w-auto mx-auto">
                     </div>
                     <div class="text-center text-2xl">
-                        Gabriel Jalbert
+                        Raphaël Matteo-Allwood
                     </div>
                     <div class="mx-auto w-4/5">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere accusantium dignissimos magnam
-                        molestias minima id eius, recusandae vel quo vero, nihil, suscipit cum totam debitis libero illo
-                        odio earum delectus!
+
+                    </div>
+                    <div>
+                        <a href="mailto:plethor3@hotmail.com">
+                            <div class="h-16 w-16 mx-auto hover:opacity-25">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="h-128 w-72 bg-white shadow-2xl flex flex-col rounded-xl text-black">
                     <div
                         class="pt-4 w-full mx-auto bg-gradient-to-b from-pink-900 to-pink-500 rounded-t-xl overflow-hidden ">
-                        <img src="assets\Gab.png" alt="" class="w-auto mx-auto">
+                        <img src="assets\Nic.png" alt="" class="w-auto mx-auto">
                     </div>
                     <div class="text-center text-2xl">
-                        Gabriel Jalbert
+                        Nicolas Beaulieu
                     </div>
                     <div class="mx-auto w-4/5">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere accusantium dignissimos magnam
-                        molestias minima id eius, recusandae vel quo vero, nihil, suscipit cum totam debitis libero illo
-                        odio earum delectus!
+                    </div>
+                    <div>
+                        <a href="mailto:nbeaulieu@nicolasbeaulieu.com">
+                            <div class="h-16 w-16 mx-auto hover:opacity-25">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                        </a>
                     </div>
                 </div>
+            </div>
+            <div class="text-white w-full text-center">
+                Supervisor: Nicolas Chourot
             </div>
         </div>
     </div>
